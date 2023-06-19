@@ -1,46 +1,44 @@
-"use strict";
-export function handleButtonEvents(button, key, onPress, onHold) {
-	let isPressed = false;
-	let holdTimer;
+// Función para agregar la clase "clicked"
+function addClickedClass(button) {
+	button.classList.add("clicked");
+}
 
-	function pressButton() {
-		if (!isPressed) {
-			isPressed = true;
-			button.classList.add("pressed");
-			if (onPress) {
-				onPress();
-			}
-			holdTimer = setTimeout(holdButton, 500);
+// Función para remover la clase "clicked"
+function removeClickedClass(button) {
+	button.classList.remove("clicked");
+}
+
+// Función para manejar los eventos del botón
+export function handleButtonEvents(button, key, actionDown, actionUp) {
+	button.addEventListener("mousedown", function () {
+		addClickedClass(button);
+		if (actionDown) {
+			actionDown();
 		}
-	}
+	});
 
-	function releaseButton() {
-		if (isPressed) {
-			isPressed = false;
-			button.classList.remove("pressed");
-			clearTimeout(holdTimer);
+	button.addEventListener("mouseup", function () {
+		removeClickedClass(button);
+		if (actionUp) {
+			actionUp();
 		}
-	}
-
-	function holdButton() {
-		if (isPressed && onHold) {
-			onHold();
-		}
-	}
-
-	button.addEventListener("mousedown", pressButton);
-	button.addEventListener("mouseup", releaseButton);
-	button.addEventListener("mouseleave", releaseButton);
+	});
 
 	document.addEventListener("keydown", function (event) {
-		if (event.key === key && !isPressed) {
-			pressButton();
+		if (event.key.toLowerCase() === key.toLowerCase()) {
+			addClickedClass(button);
+			if (actionDown) {
+				actionDown();
+			}
 		}
 	});
 
 	document.addEventListener("keyup", function (event) {
-		if (event.key === key) {
-			releaseButton();
+		if (event.key.toLowerCase() === key.toLowerCase()) {
+			removeClickedClass(button);
+			if (actionUp) {
+				actionUp();
+			}
 		}
 	});
 }

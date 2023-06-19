@@ -5,83 +5,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
 body {
-  font-family: "Special Elite";
+	font-family: "Special Elite";
 }
 
 /* Header */
 figcaption {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .logo {
-  max-height: 5rem;
+	max-height: 5rem;
 }
 
 /* Grid */
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr 0.6fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header header header"
-    "main main aside"
-    "footer footer footer";
+	display: grid;
+	grid-template-columns: 1fr 1.4fr 0.6fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"header header header"
+		"main main aside"
+		"footer footer footer";
 }
 
 .header {
-  grid-area: header;
+	grid-area: header;
 }
 
 .footer {
-  grid-area: footer;
+	grid-area: footer;
 }
 
 .main {
-  grid-area: main;
+	grid-area: main;
 }
 
 .aside {
-  grid-area: aside;
-  display: flex;
-  flex-direction: column;
+	grid-area: aside;
+	display: flex;
+	flex-direction: column;
 }
 
 /* Icono botón*/
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 ul li {
-  border-bottom: 1px solid black;
-  gap: 1rem;
+	gap: 1rem;
 }
 
 aside ul li {
-  border-bottom: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 .key {
-  max-width: 1.5rem;
+	max-width: 1.5rem;
 }
 
 /* Botones del main */
 
 .styled-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 7rem;
-  margin: 0.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: #fff;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  transition: transform 0.1s ease-in-out;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 7rem;
+	margin: 0.5rem;
+	border: none;
+	border-radius: 0.5rem;
+	background-color: #fff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	transition: transform 0.1s ease-in-out;
 }
 
 .styled-button.clicked {
-  transform: translateY(2px);
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+	transform: translateY(2px);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
