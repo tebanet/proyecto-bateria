@@ -1,6 +1,18 @@
 /* Normalize */
 @import url(./css/normalize.css);
 
+/* Fuente personalizada */
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+
+body {
+	font-family: "Special Elite";
+}
+
+/* Header */
+figcaption {
+	display: flex;
+	justify-content: center;
+}
 .logo {
 	max-height: 5rem;
 }
@@ -9,7 +21,6 @@
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1.4fr 0.6fr;
-	grid-template-rows: 0.4fr calc(100vh-0.4fr-0.1fr) 0.1fr;
 	gap: 0px 0px;
 	grid-auto-flow: row;
 	grid-template-areas:
@@ -20,31 +31,37 @@
 
 .header {
 	grid-area: header;
+	height: 5rem;
 }
 
 .footer {
 	grid-area: footer;
+	height: 2rem;
 }
 
 .main {
 	grid-area: main;
+	height: calc(100vh - 7rem);
 }
 
 .aside {
 	grid-area: aside;
 	display: flex;
 	flex-direction: column;
+	height: calc(100vh - 7rem);
 }
 
 /* Icono botón*/
 
 ul {
 	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
 ul li {
 	border-bottom: 1px solid black;
-	gap: 1rem;
 }
 
 .key {
