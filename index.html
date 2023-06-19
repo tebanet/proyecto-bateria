@@ -18,15 +18,51 @@
 		</header>
 		<main class="main">
 			<ul class="button-container">
-				<li><button id="button-a" class="styled-button">A</button></li>
-				<li><button id="button-s" class="styled-button">S</button></li>
-				<li><button id="button-d" class="styled-button">D</button></li>
-				<li><button id="button-v" class="styled-button">V</button></li>
-				<li><button id="button-g" class="styled-button">G</button></li>
-				<li><button id="button-n" class="styled-button">N</button></li>
-				<li><button id="button-j" class="styled-button">J</button></li>
-				<li><button id="button-k" class="styled-button">K</button></li>
-				<li><button id="button-l" class="styled-button">L</button></li>
+				<li>
+					<button id="button-a" class="styled-button" onclick="crash()">
+						A
+					</button>
+				</li>
+				<li>
+					<button id="button-s" class="styled-button" onclick="hihatClose()">
+						S
+					</button>
+				</li>
+				<li>
+					<button id="button-d" class="styled-button" onclick="hihatOpen()">
+						D
+					</button>
+				</li>
+				<li>
+					<button id="button-v" class="styled-button" onclick="kick()">
+						V
+					</button>
+				</li>
+				<li>
+					<button id="button-g" class="styled-button" onclick="ride()">
+						G
+					</button>
+				</li>
+				<li>
+					<button id="button-n" class="styled-button" onclick="snare()">
+						N
+					</button>
+				</li>
+				<li>
+					<button id="button-j" class="styled-button" onclick="tomHigh()">
+						J
+					</button>
+				</li>
+				<li>
+					<button id="button-k" class="styled-button" onclick="tomLow()">
+						K
+					</button>
+				</li>
+				<li>
+					<button id="button-l" class="styled-button" onclick="tomMid()">
+						L
+					</button>
+				</li>
 				<!-- <li>
 					<button id="button-record" class="styled-button">Grabar</button>
 				</li>
@@ -109,19 +145,10 @@
 		</aside>
 		<footer class="footer">&copy; Equipo B</footer>
 
-		<audio src="sounds/crash.wav"></audio>
-		<audio src="sounds/"></audio>
-		<audio src="sounds/"></audio>
-		<audio src="sounds/"></audio>
-		<audio src="sounds/"></audio>
-		<audio src="sounds/"></audio>
-		<audio src="sounds/"></audio>
-		<audio src="sounds/"></audio>
-		<audio src="sounds/"></audio>
-
 		<script src="scripts/button.js" type="module"></script>
 		<script src="scripts/sequence.js" type="module"></script>
 		<script src="scripts/record.js" type="module"></script>
 		<script src="scripts/main.js" type="module"></script>
+		<script src="scripts/drums.js"></script>
 	</body>
 </html>
