@@ -2,51 +2,54 @@
 @import url(./css/normalize.css);
 
 .logo {
-	max-height: 5rem;
+  max-height: 5rem;
 }
 
 /* Grid */
 .container {
-	display: grid;
-	grid-template-columns: 1fr 1.4fr 0.6fr;
-	grid-template-rows: 0.4fr calc(100vh-0.4fr-0.1fr) 0.1fr;
-	gap: 0px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-		"header header header"
-		"main main aside"
-		"footer footer footer";
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 0.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
 }
 
 .header {
-	grid-area: header;
+  grid-area: header;
+  height: 5rem;
 }
 
 .footer {
-	grid-area: footer;
+  grid-area: footer;
+  height: 2rem;
 }
 
 .main {
-	grid-area: main;
+  grid-area: main;
+  height: calc(100vh - 7rem);
 }
 
 .aside {
-	grid-area: aside;
-	display: flex;
-	flex-direction: column;
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 7rem);
 }
 
 /* Icono botón*/
 
 ul {
-	list-style: none;
+  list-style: none;
 }
 
 ul li {
-	border-bottom: 1px solid black;
-	gap: 1rem;
+  border-bottom: 1px solid black;
+  gap: 1rem;
 }
 
 .key {
-	max-width: 1.5rem;
+  max-width: 1.5rem;
 }
