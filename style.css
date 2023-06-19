@@ -9,7 +9,7 @@
 .container {
 	display: grid;
 	grid-template-columns: 1fr 1.4fr 0.6fr;
-	grid-template-rows: 0.4fr 2.5fr 0.1fr;
+	grid-template-rows: 0.4fr calc(100vh-0.4fr-0.1fr) 0.1fr;
 	gap: 0px 0px;
 	grid-auto-flow: row;
 	grid-template-areas:
@@ -32,9 +32,21 @@
 
 .aside {
 	grid-area: aside;
+	display: flex;
+	flex-direction: column;
 }
 
 /* Icono botón*/
 
-.crash::before {
+ul {
+	list-style: none;
+}
+
+ul li {
+	border-bottom: 1px solid black;
+	gap: 1rem;
+}
+
+.key {
+	max-width: 1.5rem;
 }
