@@ -7,47 +7,59 @@ import {
 	addToSequence,
 } from "./sequence.js";
 
+import {
+	crash,
+	hihatClose,
+	hihatOpen,
+	kick,
+	ride,
+	snare,
+	tomHigh,
+	tomLow,
+	tomMid,
+} from "./drums.js";
+
 let buttonA = document.getElementById("button-a");
-handleButtonEvents(buttonA, "A", null, function () {
+handleButtonEvents(buttonA, "A", crash, null, function () {
 	addToSequence("A");
 });
 
 let buttonS = document.getElementById("button-s");
-handleButtonEvents(buttonS, "S", null, function () {
+handleButtonEvents(buttonS, "S", hihatClose, null, function () {
 	addToSequence("S");
 });
 
 let buttonD = document.getElementById("button-d");
-handleButtonEvents(buttonD, "D", null, function () {
+handleButtonEvents(buttonD, "D", hihatOpen, null, function () {
 	addToSequence("D");
 });
 
 let buttonV = document.getElementById("button-v");
-handleButtonEvents(buttonV, "V", null, function () {
+handleButtonEvents(buttonV, "V", kick, null, function () {
 	addToSequence("V");
 });
 
 let buttonG = document.getElementById("button-g");
-handleButtonEvents(buttonG, "G", null, function () {
+handleButtonEvents(buttonG, "G", ride, null, function () {
 	addToSequence("G");
 });
 
 let buttonN = document.getElementById("button-n");
-handleButtonEvents(buttonN, "N", null, function () {
+handleButtonEvents(buttonN, "N", snare, null, function () {
 	addToSequence("N");
 });
 
 let buttonJ = document.getElementById("button-j");
-handleButtonEvents(buttonJ, "J", null, function () {
+handleButtonEvents(buttonJ, "J", tomHigh, null, function () {
 	addToSequence("J");
 });
 
 let buttonK = document.getElementById("button-k");
-handleButtonEvents(buttonK, "K", null, function () {
+handleButtonEvents(buttonK, "K", tomLow, null, function () {
 	addToSequence("K");
 });
 
 let buttonL = document.getElementById("button-l");
-handleButtonEvents(buttonL, "L", null, function () {
+handleButtonEvents(buttonL, "L", tomMid, null, function () {
 	addToSequence("L");
 });
