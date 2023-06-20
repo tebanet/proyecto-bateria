@@ -6,6 +6,9 @@
 
 body {
   font-family: "Special Elite";
+  background-image: url(/img/drumblaster_background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Header */
@@ -53,6 +56,10 @@ figcaption {
 
 /* Referencias Aside */
 
+h2 {
+  text-align: center;
+}
+
 aside ul {
   list-style: none;
   display: flex;
@@ -60,6 +67,7 @@ aside ul {
   justify-content: space-evenly;
   align-items: center;
   flex-grow: 1;
+  padding-inline-start: 0;
 }
 
 aside ul li {
