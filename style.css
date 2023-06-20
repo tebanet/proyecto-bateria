@@ -51,18 +51,19 @@ figcaption {
   height: calc(100vh - 7rem);
 }
 
-/* Icono botón*/
+/* Referencias Aside */
 
-ul {
+aside ul {
   list-style: none;
-}
-
-ul li {
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
 }
 
 aside ul li {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(128, 128, 128);
 }
 
 .key {
@@ -70,6 +71,10 @@ aside ul li {
 }
 
 /* Botones del main */
+
+main ul {
+  list-style: none;
+}
 
 .styled-button {
   display: flex;

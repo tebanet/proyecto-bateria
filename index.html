@@ -1,69 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<title>Drum Blaster!</title>
-	</head>
-	<body class="container">
-		<header class="header">
-			<figcaption>
-				<img
-					src="img/Logo_Drum_Blaster.svg"
-					class="logo"
-					alt="logo drum blaster"
-				/>
-			</figcaption>
-		</header>
-		<main class="main">
-			<ul class="button-container">
-				<li>
-					<button id="button-a" class="styled-button" onclick="crash()">
-						A
-					</button>
-				</li>
-				<li>
-					<button id="button-s" class="styled-button" onclick="hihatClose()">
-						S
-					</button>
-				</li>
-				<li>
-					<button id="button-d" class="styled-button" onclick="hihatOpen()">
-						D
-					</button>
-				</li>
-				<li>
-					<button id="button-v" class="styled-button" onclick="kick()">
-						V
-					</button>
-				</li>
-				<li>
-					<button id="button-g" class="styled-button" onclick="ride()">
-						G
-					</button>
-				</li>
-				<li>
-					<button id="button-n" class="styled-button" onclick="snare()">
-						N
-					</button>
-				</li>
-				<li>
-					<button id="button-j" class="styled-button" onclick="tomHigh()">
-						J
-					</button>
-				</li>
-				<li>
-					<button id="button-k" class="styled-button" onclick="tomLow()">
-						K
-					</button>
-				</li>
-				<li>
-					<button id="button-l" class="styled-button" onclick="tomMid()">
-						L
-					</button>
-				</li>
-				<!-- <li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Drum Blaster!</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <figcaption>
+        <img
+          src="img/Logo_Drum_Blaster.svg"
+          class="logo"
+          alt="logo drum blaster"
+        />
+      </figcaption>
+    </header>
+    <main class="main">
+      <ul class="button-container">
+        <li>
+          <button id="button-a" class="styled-button" onclick="crash()">
+            A
+          </button>
+        </li>
+        <li>
+          <button id="button-s" class="styled-button" onclick="hihatClose()">
+            S
+          </button>
+        </li>
+        <li>
+          <button id="button-d" class="styled-button" onclick="hihatOpen()">
+            D
+          </button>
+        </li>
+        <li>
+          <button id="button-v" class="styled-button" onclick="kick()">
+            V
+          </button>
+        </li>
+        <li>
+          <button id="button-g" class="styled-button" onclick="ride()">
+            G
+          </button>
+        </li>
+        <li>
+          <button id="button-n" class="styled-button" onclick="snare()">
+            N
+          </button>
+        </li>
+        <li>
+          <button id="button-j" class="styled-button" onclick="tomHigh()">
+            J
+          </button>
+        </li>
+        <li>
+          <button id="button-k" class="styled-button" onclick="tomLow()">
+            K
+          </button>
+        </li>
+        <li>
+          <button id="button-l" class="styled-button" onclick="tomMid()">
+            L
+          </button>
+        </li>
+        <!-- <li>
 					<button id="button-record" class="styled-button">Grabar</button>
 				</li>
 				<li>
@@ -74,81 +74,82 @@
 				<li>
 					<button id="button-play" class="styled-button">Reproducir</button>
 				</li> -->
-			</ul>
-		</main>
-		<aside class="aside">
-			<ul>
-				<li>
-					<img
-						src="icons/letter-uppercase-square-a-svgrepo-com.svg"
-						alt="letra A"
-						class="key"
-					/>Crash
-				</li>
-				<li>
-					<img
-						src="icons/letter-uppercase-square-s-svgrepo-com.svg"
-						alt="letra S"
-						class="key"
-					/>HiHat-Close
-				</li>
-				<li>
-					<img
-						src="icons/letter-uppercase-square-d-svgrepo-com.svg"
-						alt="letra D"
-						class="key"
-					/>HiHat-Open
-				</li>
-				<li>
-					<img
-						src="icons/letter-uppercase-square-v-svgrepo-com.svg"
-						alt="letra V"
-						class="key"
-					/>Kick
-				</li>
-				<li>
-					<img
-						src="icons/letter-uppercase-square-g-svgrepo-com.svg"
-						alt="letra G"
-						class="key"
-					/>Ride
-				</li>
-				<li>
-					<img
-						src="icons/letter-uppercase-square-n-svgrepo-com.svg"
-						alt="letra N"
-						class="key"
-					/>Snare
-				</li>
-				<li>
-					<img
-						src="icons/letter-uppercase-square-j-svgrepo-com.svg"
-						alt="letra J"
-						class="key"
-					/>Tom-High
-				</li>
-				<li>
-					<img
-						src="icons/letter-uppercase-square-k-svgrepo-com.svg"
-						alt="letra K"
-						class="key"
-					/>Tom-Low
-				</li>
-				<li>
-					<img
-						src="icons/letter-uppercase-square-l-svgrepo-com.svg"
-						alt="letra L"
-						class="key"
-					/>Tom-Mid
-				</li>
-			</ul>
-		</aside>
-		<footer class="footer">&copy; Equipo B</footer>
+      </ul>
+    </main>
+    <aside class="aside">
+      <h2>Referencias</h2>
+      <ul>
+        <li>
+          <img
+            src="icons/letter-uppercase-square-a-svgrepo-com.svg"
+            alt="letra A"
+            class="key"
+          />Crash
+        </li>
+        <li>
+          <img
+            src="icons/letter-uppercase-square-s-svgrepo-com.svg"
+            alt="letra S"
+            class="key"
+          />HiHat-Close
+        </li>
+        <li>
+          <img
+            src="icons/letter-uppercase-square-d-svgrepo-com.svg"
+            alt="letra D"
+            class="key"
+          />HiHat-Open
+        </li>
+        <li>
+          <img
+            src="icons/letter-uppercase-square-v-svgrepo-com.svg"
+            alt="letra V"
+            class="key"
+          />Kick
+        </li>
+        <li>
+          <img
+            src="icons/letter-uppercase-square-g-svgrepo-com.svg"
+            alt="letra G"
+            class="key"
+          />Ride
+        </li>
+        <li>
+          <img
+            src="icons/letter-uppercase-square-n-svgrepo-com.svg"
+            alt="letra N"
+            class="key"
+          />Snare
+        </li>
+        <li>
+          <img
+            src="icons/letter-uppercase-square-j-svgrepo-com.svg"
+            alt="letra J"
+            class="key"
+          />Tom-High
+        </li>
+        <li>
+          <img
+            src="icons/letter-uppercase-square-k-svgrepo-com.svg"
+            alt="letra K"
+            class="key"
+          />Tom-Low
+        </li>
+        <li>
+          <img
+            src="icons/letter-uppercase-square-l-svgrepo-com.svg"
+            alt="letra L"
+            class="key"
+          />Tom-Mid
+        </li>
+      </ul>
+    </aside>
+    <footer class="footer">&copy; Equipo B</footer>
 
-		<script src="scripts/button.js" type="module"></script>
-		<script src="scripts/sequence.js" type="module"></script>
-		<script src="scripts/record.js" type="module"></script>
-		<script src="scripts/main.js" type="module"></script>
-		<script src="scripts/drums.js"></script>
-	</body>
+    <script src="scripts/button.js" type="module"></script>
+    <script src="scripts/sequence.js" type="module"></script>
+    <script src="scripts/record.js" type="module"></script>
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/drums.js"></script>
+  </body>
 </html>
