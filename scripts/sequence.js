@@ -29,12 +29,17 @@ export function playSequence() {
 				document.dispatchEvent(eventObj);
 
 				index++;
-				setTimeout(simulateKeyPress, 500); // Esperar 500ms entre pulsaciones
-			}, 250); // Mantener presionado durante 250ms
+				setTimeout(simulateKeyPress, 300); // Esperar 300ms entre pulsaciones
+			}, 150); // Mantener presionado durante 150ms
 		}
 	}
 
 	simulateKeyPress();
+}
+
+export function stopSequence() {
+	sequence = [];
+	isPlaying = false;
 }
 
 export function addToSequence(key) {
