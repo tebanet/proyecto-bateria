@@ -6,6 +6,9 @@
 
 body {
   font-family: "Special Elite";
+  background-image: url(/img/drumblaster_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Header */
@@ -51,18 +54,24 @@ figcaption {
   height: calc(100vh - 7rem);
 }
 
-/* Icono botón*/
+/* Referencias Aside */
 
-ul {
-  list-style: none;
+aside h2 {
+  text-align: center;
 }
 
-ul li {
-  gap: 1rem;
+aside ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  padding-inline-start: 0;
 }
 
 aside ul li {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(128, 128, 128);
 }
 
 .key {
@@ -70,6 +79,10 @@ aside ul li {
 }
 
 /* Botones del main */
+
+main ul {
+  list-style: none;
+}
 
 .styled-button {
   display: flex;
@@ -87,4 +100,10 @@ aside ul li {
 .styled-button.clicked {
   transform: translateY(2px);
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
 }
