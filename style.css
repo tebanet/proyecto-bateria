@@ -8,7 +8,7 @@ body {
   font-family: "Special Elite";
   background-image: url(/img/drumblaster_background.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 /* Header */
