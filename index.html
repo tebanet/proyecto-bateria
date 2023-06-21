@@ -8,13 +8,24 @@
   </head>
   <body class="container">
     <header class="header">
-      <figcaption>
+      <figure>
         <img
           src="img/Logo_Drum_Blaster.svg"
           class="logo"
           alt="logo drum blaster"
         />
-      </figcaption>
+      </figure>
+      <ul class="record-options">
+        <li>
+          <button id="button-record" class="record-button">Grabar</button>
+        </li>
+        <li>
+          <button id="button-stop" class="record-button">Parar</button>
+        </li>
+        <li>
+          <button id="button-play" class="record-button">Reproducir</button>
+        </li>
+      </ul>
     </header>
     <main class="main">
       <article class="drumkit-container">
@@ -50,45 +61,18 @@
           D
         </button>
         <button id="button-v" class="styled-button" onclick="kick()">V</button>
+        <button id="button-g" class="styled-button" onclick="ride()">G</button>
+        <button id="button-n" class="styled-button" onclick="snare()">N</button>
+        <button id="button-j" class="styled-button" onclick="tomHigh()">
+          J
+        </button>
+        <button id="button-k" class="styled-button" onclick="tomLow()">
+          K
+        </button>
+        <button id="button-l" class="styled-button" onclick="tomMid()">
+          L
+        </button>
       </article>
-      <ul class="button-container">
-        <li>
-          <button id="button-g" class="styled-button" onclick="ride()">
-            G
-          </button>
-        </li>
-        <li>
-          <button id="button-n" class="styled-button" onclick="snare()">
-            N
-          </button>
-        </li>
-        <li>
-          <button id="button-j" class="styled-button" onclick="tomHigh()">
-            J
-          </button>
-        </li>
-        <li>
-          <button id="button-k" class="styled-button" onclick="tomLow()">
-            K
-          </button>
-        </li>
-        <li>
-          <button id="button-l" class="styled-button" onclick="tomMid()">
-            L
-          </button>
-        </li>
-        <!-- <li>
-					<button id="button-record" class="styled-button">Grabar</button>
-				</li>
-				<li>
-					<button id="button-stop" class="styled-button">
-						Parar de grabar
-					</button>
-				</li>
-				<li>
-					<button id="button-play" class="styled-button">Reproducir</button>
-				</li> -->
-      </ul>
     </main>
     <aside class="aside">
       <h2>Referencias</h2>
