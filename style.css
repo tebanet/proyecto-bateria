@@ -244,6 +244,7 @@ button#button-l {
   align-self: flex-start;
 }
 
+/* Sombreado de Imagenes Bateria */
 .shadow-class {
   filter: drop-shadow(4px 4px 2px rgb(51, 51, 51));
 }
