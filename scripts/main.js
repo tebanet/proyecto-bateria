@@ -21,6 +21,7 @@ import {
 } from "./drums.js";
 
 let isPlaying = false;
+let isRecording = false;
 
 let buttonA = document.getElementById("button-a");
 handleButtonEvents(buttonA, "A", crash, function () {
@@ -86,10 +87,21 @@ handleButtonEvents(buttonL, "L", tomMid, function () {
 });
 
 let recordButton = document.getElementById("record-button");
-handleButtonEvents(recordButton, "R", startRecording);
+handleButtonEvents(recordButton, "R", function () {
+	if (!isRecording) {
+		isRecording = true;
+		recordButton.textContent = "Grabando";
+		startRecording();
+	}
+});
 
 let stopButton = document.getElementById("stop-button");
-handleButtonEvents(stopButton, "T", stopRecording);
+handleButtonEvents(stopButton, "T", function () {
+	if (isRecording) {
+		isRecording = false;
+		recordButton.textContent = "Grabar";
+	}
+});
 
 let playButton = document.getElementById("play-button");
 handleButtonEvents(playButton, "Y", function () {
@@ -97,7 +109,6 @@ handleButtonEvents(playButton, "Y", function () {
 		isPlaying = true;
 		playButton.textContent = "Parar";
 		playSequence();
-		console.log(sequence);
 	} else {
 		isPlaying = false;
 		playButton.textContent = "Reproducir";
